@@ -1,0 +1,11 @@
+{
+  "name": "panda-brain",
+  "version": "1.0.0",
+  "description": "Memory game feature cute panda pictures",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Tanisha L Davey",
+  "license": "ISC"
+}
