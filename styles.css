@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FFF;
+    color: #000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    border: 2px solid blue;
+    max-width: 53rem;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+header {
+    text-align: center;
+}
+
+h2 {
+    font-size: 1rem;
+}
