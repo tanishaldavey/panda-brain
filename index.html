@@ -11,7 +11,25 @@
         <header>
             <h1>Panda Brain</h1>
             <h2>Match the pandas to win the game</h2>
-            <section class="cards">
+            <section class="game-settings">
+                <fieldset>
+                    <legend>Game mode:</legend>
+                    <div>
+                        <input type="radio" id="easy" name="mode" value="Easy">
+                        <label for="easy">Easy</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="medium" name="mode" value="Medium">
+                        <label for="medium">Medium</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="hard" name="mode" value="Hard">
+                        <label for="hard">Hard</label>
+                    </div>
+                </fieldset>
+                <button id="play-button">Play</button>
+            </section>
+            <section class="cards-container hide-view">
                 <!-- Cards will populate here upon starting game -->
             </section>
         </header>
