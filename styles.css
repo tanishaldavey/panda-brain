@@ -30,6 +30,11 @@ h2 {
     font-size: 1rem;
 }
 
+fieldset,
+.cards-container {
+    margin: 0 auto;
+}
+
 fieldset {
     font-size: 1.5rem;
     height: 10rem;
@@ -51,8 +56,14 @@ fieldset > div {
 
 .cards-container {
     border: 2px solid fuchsia;
-    width: 5px;
-    height: 2rem;
+    height: 80vh;
+    margin-top: 1rem;
+    width: 95%;
+}
+
+.panda-card {
+    height: 5rem;
+    width: 5rem;
 }
 
 .hide-view {
