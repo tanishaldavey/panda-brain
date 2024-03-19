@@ -15,8 +15,21 @@ function displayGameBoard() {
 }
 
 function setUpCards() {
-    const cards = newCards.dealCards(mode.easy)
-    cardsContainer.innerHTML = cards.map(card => {
-        return `<img class='panda-card' src='./assets/cards/${card}' alt='cute panda' />`
-    })
+    const cards = newCards.shuffleCards()
+
+    const board = cardsContainer.innerHTML = cards.map(card => {
+        return `
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                    <img class="panda-card" src="./assets/back-of-card.jpeg">
+                    </div>
+                    <div class="flip-card-back">
+                        <img class='panda-card' src='./assets/cards/${card}' alt='cute panda' />
+                    </div>
+                </div>
+            </div>
+        `
+    }).join(' ');
+    return board;
 }

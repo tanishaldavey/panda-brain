@@ -21,16 +21,33 @@ class Cards {
     }
 
     dealCards (mode) {
-        for (let i = 0; i < mode; i++) {
-            let selection = Math.floor(Math.random() * this.cards.length)
+        for (let i = 0; i < 15; i++) {
+            let selection = Math.floor(Math.random() * this.cards.length);
             if (this.cardSet.includes(this.cards[selection])) {
                 mode += 1;
             } else {
                 this.cardSet.push(this.cards[selection])
+                this.cardSet.push(this.cards[selection])
             }
         }
-        console.log(this.cardSet)
         return this.cardSet;
+    }
+
+    shuffleCards() {
+        this.dealCards();
+        var copy = [], n = this.cardSet.length, i;
+
+        // While there remain elements to shuffle…
+        while (n) {
+
+        // Pick a remaining element…
+        i = Math.floor(Math.random() * n--);
+
+        // And move it to the new array.
+        copy.push(this.cardSet.splice(i, 1)[0]);
+        }
+
+        return copy;
     }
 
 }
